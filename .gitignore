@@ -1,0 +1,17 @@
+# Allow-list approach: ignore everything by default, then explicitly
+# un-ignore only what belongs in this repo (skills/, tools/, docker-compose.yml,
+# main.tf). This keeps secrets and local state out even if new files show up
+# here later.
+/*
+
+!/skills/
+!/skills/**
+!/tools/
+!/tools/**
+!/docker-compose.yml
+!/main.tf
+!/README.md
+!/.gitignore
+!response.md
+!notes.md
+!invoice_index_pipeline_plan.md
